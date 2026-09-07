@@ -224,4 +224,9 @@ int main()
     {
         print_circle();
     }
+
+    else if (getting_mode == RESTART_PROGRAMM)
+    {
+        printf(MY_RED_AND_CURSIVE "Please restart programm and enter the comand from menu\n" MY_END_CUSTOM);
+    }
 }
