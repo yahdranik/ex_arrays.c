@@ -177,7 +177,7 @@ void print_rhombus()                         // Аналогично
     }
 }
 
-void print_circle() // ебаные нули у которых есть высота как фиксить то
+void print_circle() // не ругайся перепишу на эллипс
 {
     const int radius = 8;
     const int LEN_ARR = radius * radius; 
