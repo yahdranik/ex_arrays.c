@@ -61,12 +61,6 @@ enum UserChoice check_input()
         clean_buffer();
         return PRINT_CIRCLE;
     }
-    
-    else if ((strcmp(string, "STAR") == 0))
-    {
-        clean_buffer();
-        return PRINT_STAR;
-    }
 
     else if ((strcmp(string, "TURNAMENT") == 0))
     {
@@ -177,7 +171,7 @@ void print_rhombus()                         // Аналогично
     }
 }
 
-void print_circle() // не ругайся перепишу на эллипс
+void print_circle() // перепишу на эллипс
 {
     const int radius = 8;
     const int LEN_ARR = radius * radius; 
