@@ -171,12 +171,12 @@ void print_rhombus()                         // Аналогично
     }
 }
 
-void print_circle() // перепишу на эллипс
+void print_circle()
 {
     const int radius = 8;
     const int LEN_ARR = radius * radius; 
 
-    char array[ LEN_ARR ] = {};
+    char array[ LEN_ARR ] = {'~', '~', '~', '~', '~', '~', '~', '~', '~', '~', '~', '~', '~', '~', '~', '~', '~', '~', '~', '~', '~', '~', '~', '~', };
 
     for (int y = 0; y < 2 * radius; y++)
     {
@@ -184,7 +184,7 @@ void print_circle() // перепишу на эллипс
         {
             if ((x - radius) * (x - radius) + (y - radius) * (y - radius) < radius * radius)
             {
-                printf("%d", array[x]);
+                printf("%c", array[x]);
             }
 
             else
@@ -201,7 +201,6 @@ int main()
     printf(MY_BLUE_AND_CURSIVE "TRIANGLE - to print beautiful triangle\n"
            "RHOMBUS - to print amazing rhombus\n"
            "CIRCLE - to print great circle\n"
-           "STAR - to print impressive star\n"
            "TURNAMENT - to print turnament table with results matches\n" MY_END_CUSTOM);
     enum UserChoice getting_mode = check_input();
 
